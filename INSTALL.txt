@@ -1,0 +1,32 @@
+ZYM: your workout app
+=====================
+
+What this is
+- A small web app that installs to your home screen, works offline,
+  and keeps every workout log on your phone only.
+
+Step 1: Put these files on a web address (one time, free)
+  Option A, GitHub Pages:
+    1. On github.com, create a new public repository, e.g. "zym".
+    2. Add file > Upload files: drag in EVERYTHING from this folder
+       (index.html, sw.js, manifest.webmanifest, three.min.js, fonts/, icons/).
+    3. Settings > Pages > Source: "Deploy from a branch", branch "main", folder "/ (root)".
+    4. After a minute your app is at https://YOUR-NAME.github.io/zym/
+  Option B, Netlify:
+    1. Go to app.netlify.com/drop and drag this whole folder in.
+    2. Sign up (free) when asked so the site stays up.
+
+Step 2: Install on your phone
+  iPhone:  open the address in Safari > Share > Add to Home Screen.
+  Android: open it in Chrome > menu > Install app (or Add to Home screen).
+  Open it once while online. After that it works with no internet.
+
+Your data
+- Logs are saved in the app's storage on your phone. Nothing is uploaded.
+- Use "Backup and restore" under the calendar every few weeks and save the
+  file to Files / iCloud Drive / Google Drive. Restore it on a new phone.
+- Deleting the app from the home screen deletes its logs, so back up first.
+
+Updating later
+- Replace the files on GitHub/Netlify and change VERSION in sw.js
+  (e.g. zym-v2). The app picks up the new version next time it opens online.
